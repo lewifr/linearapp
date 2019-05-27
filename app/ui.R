@@ -8,7 +8,7 @@ library(shinydashboard)
 library(data.table)
 
 version <- fread('/VERSION')
-
+print(version)
 ui <- dashboardPage(
   
   # Define Header and Sidebar
