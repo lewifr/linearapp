@@ -6,6 +6,8 @@
 # Use ShinyDashboard
 library(shinydashboard)
 
+version <- fread('/VERSION')
+
 ui <- dashboardPage(
   
   # Define Header and Sidebar
