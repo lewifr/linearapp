@@ -12,7 +12,7 @@ version <- fread('/VERSION')
 ui <- dashboardPage(
   
   # Define Header and Sidebar
-  dashboardHeader(title = "Linear Models"),
+  dashboardHeader(title = paste0("Linear Models (ver: ", version, ")")),
   
   dashboardSidebar(
     sidebarMenu(
