@@ -5,10 +5,10 @@
 
 # Use ShinyDashboard
 library(shinydashboard)
-library(data.table)
+library(readr)
 
-version <- fread('/VERSION')
-print(version)
+version <- read_file('../VERSION')
+
 ui <- dashboardPage(
   
   # Define Header and Sidebar
