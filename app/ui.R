@@ -7,7 +7,7 @@
 library(shinydashboard)
 library(readr)
 
-version <- read_file('../VERSION')
+version <- read_file('/VERSION')
 
 ui <- dashboardPage(
   
