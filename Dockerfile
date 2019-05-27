@@ -24,7 +24,7 @@ RUN wget --no-verbose https://download3.rstudio.org/ubuntu-14.04/x86_64/VERSION 
     chown shiny:shiny /var/lib/shiny-server
 
 # TODO: add further package if you need!
-RUN R -e "install.packages(c('shiny', 'shinydashboard'), repos='http://cran.rstudio.com/')"
+RUN R -e "install.packages(c('shiny', 'shinydashboard', 'data.table'), repos='http://cran.rstudio.com/')"
 
 # Copy configuration files into the Docker image
 COPY shiny-server.conf  /etc/shiny-server/shiny-server.conf

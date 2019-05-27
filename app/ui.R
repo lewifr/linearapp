@@ -5,6 +5,7 @@
 
 # Use ShinyDashboard
 library(shinydashboard)
+library(data.table)
 
 version <- fread('/VERSION')
 
